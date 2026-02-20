@@ -1,30 +1,21 @@
-package tns_acc_corejava;
+package org.tns.acc.c2tc.core_java;
 
-
-interface Vehicle6
+interface Vehicle
 {
 	void start();
 	void stop();
 
 	int Max_speed=120;
-	
-	default void repair()
-	{
-		System.out.println("Vehicle is being repaired");
-	}
-	static void checkMaintaince()
-	{
-		System.out.println("vehicle maintaince taken care here");
-	}
+
 }
 
-class Car6 implements Vehicle6 
+class Car5 implements Vehicle 
 {
    private String model;
    
    
    
-	public Car6(String model) {
+	public Car5(String model) {
 		this.model = model;
 	}
 
@@ -42,13 +33,13 @@ class Car6 implements Vehicle6
 	
 }
 
-class Bike6 implements Vehicle6
+class Bike implements Vehicle
 {
    private String type;
    
    
    
-	public Bike6(String type) {
+	public Bike(String type) {
 		this.type = type;
 	}
 
@@ -66,11 +57,11 @@ class Bike6 implements Vehicle6
 	
 }
 
-public class Default_and_static_method_interface {
+public class InterfaceDemo2 {
 	
 	public static void main(String[] args) {
-		Vehicle6 car=new Car6("KIA");
-		Vehicle6 bike=new Bike6("Royal Enfield"); 
+		Vehicle car=new Car5("KIA");
+		Vehicle bike=new Bike("Royal Enfield"); 
 		
 		car.start();
 		car.stop();
@@ -78,16 +69,9 @@ public class Default_and_static_method_interface {
 		bike.start();
 		bike.stop();
 		
-		car.repair();
-		bike.repair();
-		
-		Vehicle6.checkMaintaince();
-		
-		
-		System.out.println("maximun speed of vehicles" +"     " +  Vehicle6.Max_speed );
+		System.out.println("maximun speed of vehicles" +"     " +  Vehicle.Max_speed );
 		
 	}
 
 }
-
 

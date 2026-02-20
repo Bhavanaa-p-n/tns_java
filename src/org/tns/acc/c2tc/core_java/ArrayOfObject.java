@@ -1,4 +1,4 @@
-package tns_acc_corejava;
+package org.tns.acc.c2tc.core_java;
 
 class Book
 {
