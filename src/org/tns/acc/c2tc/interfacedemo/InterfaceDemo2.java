@@ -9,7 +9,7 @@ interface Vehicle
 
 }
 
-class Car5 implements Vehicle 
+class Car5 implements Vehicle1 
 {
    private String model;
    
@@ -33,7 +33,7 @@ class Car5 implements Vehicle
 	
 }
 
-class Bike implements Vehicle
+class Bike implements Vehicle1
 {
    private String type;
    
@@ -61,8 +61,8 @@ class Bike implements Vehicle
 public class InterfaceDemo2 {
 
 	public static void main(String[] args) {
-		Vehicle car=new Car5("KIA");
-		Vehicle bike=new Bike("Royal Enfield"); 
+		Vehicle1 car=new Car5("KIA");
+		Vehicle1 bike=new Bike("Royal Enfield"); 
 		
 		car.start();
 		car.stop();
@@ -70,7 +70,7 @@ public class InterfaceDemo2 {
 		bike.start();
 		bike.stop();
 		
-		System.out.println("maximun speed of vehicles" +"     " +  Vehicle.Max_speed );
+		System.out.println("maximun speed of vehicles" +"     " +  Vehicle1.Max_speed );
 		
 	}
 

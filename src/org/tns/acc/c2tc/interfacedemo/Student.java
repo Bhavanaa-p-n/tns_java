@@ -1,52 +1,48 @@
 package org.tns.acc.c2tc.interfacedemo;
 
-public class Student implements  Registerable
-{
-	
-	private int id;
-	private String name;
-	private double fees;
-	private String course;
-	
-	public Student(int id, String name, double fees, String course) {
-		
-		this.id = id;
-		this.name = name;
-		this.fees = fees;
-		this.course = course;
-	}
+public class Student implements Registerable {
 
-	public int getId() {
-		return id;
-	}
+    private int id;
+    private String name;
+    private double fees;
+    private String course;
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    public Student(int id, String name, double fees, String course) {
+        this.id = id;
+        this.name = name;
+        this.fees = fees;
+        this.course = course;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public int getId() {
+        return id;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-	public double getFees() {
-		return fees;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setFees(double fees) {
-		this.fees = fees;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getCourse() {
-		return course;
-	}
+    public double getFees() {
+        return fees;
+    }
 
-	public void setCourse(String course) {
-		this.course = course;
-	}
-	
-	
+    public void setFees(double fees) {
+        this.fees = fees;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
 }
